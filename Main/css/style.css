@@ -264,7 +264,7 @@
 	height: 100%;
 }
 li {
-    color: #FCC68A;
+    color: #000000;
 }
 li span {
     color: #868e96;
@@ -318,6 +318,10 @@ li span {
 	color:white;
 	vertical-align:bottom;
 	font-weight: 600;
+}
+.card-serv-hover:hover {
+	height: 160px;
+	width: 250px;
 }
 .bg-call {
 	background-image: url(../img/call-bg.jpg);
