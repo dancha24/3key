@@ -79,11 +79,9 @@ body{-webkit-tap-highlight-color: #5c4738;}
 	#mainNav .navbar-nav .nav-item .nav-link{
 		padding:1.1em 1em!important}
 	#mainNav.navbar-shrink
-	{
-		/* padding-top:0; */
+	{padding-top:0;
 		padding-bottom:0;
-		background-color:#222;
-		}
+		background-color:#222}
 	#mainNav.navbar-shrink .navbar-brand
 	{font-size:1.25em;
 		padding:12px 0}}
