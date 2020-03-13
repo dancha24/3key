@@ -236,19 +236,37 @@
             </div>
         </div>
 
-        <form class="text-center">
-            <div class="row justify-content-center form-group">
-                <label class="col-12 py-2" for="exampleInputName">Ваше Имя</label>
-                <input type="name" class="text-center input-no-back form-control col-8" id="exampleInputName"
-                       placeholder="Введите ваше имя">
-            </div>
-            <div class="row justify-content-center  form-group">
-                <label class="col-12 py-2" for="exampleInputPhone">Ваш номер телефона</label>
-                <input type="phone" class="col-8 text-center input-no-back form-control" id="exampleInputPhone"
-                       placeholder="+7-999-888-77-66">
-            </div>
-            <button type="submit" class="text-white btn btn btn-lg btn-main py-3">Заказать звонок</button>
-        </form>
+        <!--        <form class="text-center">-->
+        <!--            <div class="row justify-content-center form-group">-->
+        <!--                <label class="col-12 py-2" for="exampleInputName">Ваше Имя</label>-->
+        <!--                <input type="name" class="text-center input-no-back form-control col-8" id="exampleInputName"-->
+        <!--                       placeholder="Введите ваше имя">-->
+        <!--            </div>-->
+        <!--            <div class="row justify-content-center  form-group">-->
+        <!--                <label class="col-12 py-2" for="exampleInputPhone">Ваш номер телефона</label>-->
+        <!--                <input type="phone" class="col-8 text-center input-no-back form-control" id="exampleInputPhone"-->
+        <!--                       placeholder="+7-999-888-77-66">-->
+        <!--            </div>-->
+        <!--            <button type="submit" class="text-white btn btn btn-lg btn-main py-3">Заказать звонок</button>-->
+        <!--        </form>-->
+
+        <script id="bx24_form_inline" data-skip-moving="true">
+            (function (w, d, u, b) {
+                w['Bitrix24FormObject'] = b;
+                w[b] = w[b] || function () {
+                    arguments[0].ref = u;
+                    (w[b].forms = w[b].forms || []).push(arguments[0])
+                };
+                if (w[b]['forms']) return;
+                var s = d.createElement('script');
+                s.async = 1;
+                s.src = u + '?' + (1 * new Date());
+                var h = d.getElementsByTagName('script')[0];
+                h.parentNode.insertBefore(s, h);
+            })(window, document, 'https://avtopark.bitrix24.ru/bitrix/js/crm/form_loader.js', 'b24form');
+
+            b24form({"id": "32", "lang": "ru", "sec": "5zzpv8", "type": "inline"});
+        </script>
 
     </div>
 </section>
@@ -275,10 +293,13 @@
 <DIV id="toTop"><i class="fas fa-arrow-alt-circle-up"></i></DIV>
 
 <script>
-        (function(w,d,u){
-                var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/60000|0);
-                var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
-        })(window,document,'https://cdn.bitrix24.ru/b7087087/crm/site_button/loader_10_eejgve.js');
+    (function (w, d, u) {
+        var s = d.createElement('script');
+        s.async = true;
+        s.src = u + '?' + (Date.now() / 60000 | 0);
+        var h = d.getElementsByTagName('script')[0];
+        h.parentNode.insertBefore(s, h);
+    })(window, document, 'https://cdn.bitrix24.ru/b7087087/crm/site_button/loader_10_eejgve.js');
 </script>
 
 <script>
