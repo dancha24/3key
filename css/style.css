@@ -350,3 +350,6 @@ li span {
 	border-bottom: 2px solid rgb(92, 71, 56);
     background: none;
 }
+.crm-webform-label{
+	text-align: center!important;
+}
