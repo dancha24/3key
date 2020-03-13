@@ -352,4 +352,52 @@ li span {
 }
 .crm-webform-label{
 	text-align: center!important;
+	color: white;
+}
+.crm-webform-input{
+	border-bottom: 2px solid rgb(92, 71, 56);
+	border-top: none;
+	border-left: none;
+	border-right: none;
+    background: none;
+	color: #b4b4b4;
+}
+.crm-webform-input:focus{
+	border-bottom: 2px solid rgb(92, 71, 56);
+    background: none;
+}
+
+.crm-webform-input:hover{
+	border-bottom: 2px solid rgb(92, 71, 56);
+    background: none;
+}
+
+.crm-webform-input:active{
+	border-bottom: 2px solid rgb(92, 71, 56);
+    background: none;
+}
+.crm-webform-label-content{
+	background: none;
+}
+.crm-webform-iframe{
+	background: none;
+}
+.content {
+	background: none!important;
+}
+.crm-webform-header-container{
+	background: none;
+}
+.crm-webform-submit-button{
+    background: #5C4738!important;
+    box-shadow: 0px 4px 10px #5C4738!important;
+    border-radius: 10px!important;
+	padding: .10rem 10rem!important;
+    font-size: 1.25rem!important;
+    line-height: 1.5!important;
+	display: inline-block!important;
+    font-weight: 400!important;
+    text-align: center!important;
+    white-space: nowrap!important;
+    vertical-align: middle!important;
 }
