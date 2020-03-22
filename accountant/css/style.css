@@ -349,3 +349,16 @@ li span {
 	border-bottom: 2px solid rgb(92, 71, 56);
     background: none;
 }
+
+.how_work .how_work_text p {
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+.how_work .how_work_img {
+    height: 90px;
+    width: 100%;
+    display: inline-block;
+    background: url(img/how_work/work_tmb.png) no-repeat 100%;
+    background-size: contain;
+}
