@@ -277,25 +277,27 @@ li span {
 	vertical-align:top;
 	font-weight: 600;
 }
-.card-serv-1 {
-	background: #5C4738;
+.card-serv-2 {
 	border-radius: 10px;
-	background-image: url(../img/cards/serv1.jpg);
-	background-position: center center;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border: 2px solid #5C4738;
+	color: #5C4738;
+	height: 170px;
+	width: 260px;
+	vertical-align:top;
+	font-weight: 600;
+	transition-duration: .5s;
+}
+.card-serv-3 {
+	background: #5C4738;
+	border: 2px solid #5C4738;
+	border-radius: 10px;
 	height: 170px;
 	width: 260px;
 	color:white;
-	vertical-align:bottom;
+	vertical-align:top;
 	font-weight: 600;
-}
-.card-serv-3 {
-	background: #FCC68A;
-	border-radius: 10px;
-	height: 170px;
-	width: 260px;
-	color: #5C473;
-	vertical-align:bottom;
-	font-weight: 600;
+	transition-duration: .5s;
 }
 .card-serv-4 {
 	background: #5C4738;
@@ -321,6 +323,13 @@ li span {
 .card-serv-hover:hover {
 	height: 160px;
 	width: 250px;
+}
+.card-serv-hover-2:hover {
+	background: #5c4738;
+	color: white;
+}
+.card-serv-hover-3:hover {
+	background: rgba(92, 71, 56, 0.87);
 }
 .bg-call {
 	background-image: url(../img/call-bg.jpg);
