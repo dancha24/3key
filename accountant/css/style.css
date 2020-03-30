@@ -268,20 +268,20 @@ li {
 li span {
     color: #868e96;
 }
+.card-serv {
+	background: #5C4738;
+	border-radius: 10px;
+	height: 170px;
+	width: 260px;
+	color:white;
+	vertical-align:top;
+	font-weight: 600;
+}
 .card-serv-1 {
 	background: #5C4738;
 	border-radius: 10px;
 	background-image: url(../img/cards/serv1.jpg);
 	background-position: center center;
-	height: 170px;
-	width: 260px;
-	color:white;
-	vertical-align:bottom;
-	font-weight: 600;
-}
-.card-serv-2 {
-	background: #5C4738;
-	border-radius: 10px;
 	height: 170px;
 	width: 260px;
 	color:white;
