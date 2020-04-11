@@ -395,3 +395,9 @@ li span {
 .batya-skazal-text-zdelat-bolshe{
     font-size: 18px;
 }
+.bg-map{
+    background-image: url(../img/map-image.png);
+    background-size: auto 100%;
+    background-position: center center;
+    color: white;
+}
