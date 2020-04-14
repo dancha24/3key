@@ -13,7 +13,9 @@
     <title>3Кей</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!--    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet">
 
     <link rel="icon" href="LogoAv.ico" type="image/x-icon">
@@ -90,7 +92,7 @@
         </button>
 
         <div class="navbar-collapse text-center collapse" id="navbarResponsive" style="">
-            <ul class="navbar-nav ml-auto pt-3">
+            <ul class="navbar-nav ml-auto pt-2">
 
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#service">Услуги</a>
@@ -111,7 +113,7 @@
                                 class="img-fluid" src="img/tel.png">
                         </a></div>
                         <div class="col-8">
-                            <a href="#zvonok"><p class="text-white">+7-384-265-01-20</p></a>
+                            <a href="#zvonok"><p style="margin-bottom: 0;" class="text-white">+7-384-265-01-20</p></a>
                             <a href="#zvonok" class="text-cord">Заказать звонок</a>
                         </div>
                     </div>
@@ -128,11 +130,11 @@
     <div class="container">
         <div class="intro-text row justify-content-center" style="padding-top: 200px">
             <div class="col-md-12 pt-2 px-5">
-            <div class="p-0 intro-heading" style="padding-bottom: 0px; font-size: 45px;">Бухгалтерские услуги</div>
+                <div class="p-0 intro-heading" style="padding-bottom: 0px; font-size: 45px;">Бухгалтерские услуги</div>
             </div>
 
             <div class="col-md-12 pt-2 px-5">
-            <div class="intro-lead-in">Передай бухгалтерскую рутину в надёжные руки</div>
+                <div class="intro-lead-in">Передай бухгалтерскую рутину в надёжные руки</div>
             </div>
 
             <div class="col-md-6 pt-2 px-5">
@@ -600,14 +602,49 @@
     </div>
 </section>
 
-<!--<section class="bg-light pt-5 how_work" id="calc">-->
-<!--    <div class="container-fluid">-->
-<!--        <div class="text-center pb-3">-->
-<!--            <h2>Расчет стоимости обслуживания</h2>-->
-<!--        </div>-->
-<!--        <div class="uCalc_272904"></div>-->
-<!--    </div>-->
-<!--</section>-->
+<section class="bg-light pt-5 how_work" id="calc">
+    <div class="container px-lg-5">
+        <div class="text-center pb-3">
+            <h2>Расчет стоимости обслуживания</h2>
+        </div>
+        <div class="px-lg-5" onchange="raschitat()">
+            <div class="form-row justify-content-center pt-3">
+                <div class="col-md-6">
+                    <label style="font-weight: 700;">Система налогообложения</label>
+                    <div class="custom-control custom-radio pb-3">
+                        <input type="radio" id="customRadio1" name="var" value="1" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadio1">ОСНО</label>
+                    </div>
+                    <div class="custom-control custom-radio pb-3">
+                        <input type="radio" id="customRadio2" name="var" value="2" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadio2">УСН 15%</label>
+                    </div>
+                    <div class="custom-control custom-radio pb-3">
+                        <input type="radio" id="customRadio3" name="var" value="3" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadio3">УСН 6%</label>
+                    </div>
+                    <div class="custom-control custom-radio pb-3">
+                        <input checked type="radio" id="customRadio4" name="var" value="4" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadio4">Нулевая отчётность</label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label style="font-weight: 700;">Количество операций в месяц</label>
+                    <input name="opera" type="text" class="webform-input form-control mb-2 mr-sm-2" id="opera"
+                           placeholder="Кол-во">
+                    <label class="pt-3" style="font-weight: 700;">Численность сотрудников</label>
+                    <input name="sotrudnik" type="text" class="webform-input form-control mb-2 mr-sm-2" id="sotrudnik"
+                           placeholder="Кол-во">
+                </div>
+            </div>
+            <div class="form-row justify-content-center pt-2 px-3">
+                <div class="col-12">
+                    <h5>Итого: <span id="rez">1500 Руб.</span></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <section class="pt-5 how_work" id="whats">
     <div class="container">
@@ -749,11 +786,13 @@
                 <a href="http://xn--h1apee0d.xn--3-jtbmc.xn--p1ai/" style="text-decoration: none;">
                     <div style="background-color: white" class="what-card">
                         <img width="100%" src="img/cards/yurist.jpg">
-                        <h4 style="background-color: white" class="service-heading text-left text-dark pl-2">Юридические услуги</h4>
+                        <h4 style="background-color: white" class="service-heading text-left text-dark pl-2">Юридические
+                            услуги</h4>
                         <ul style="height: 200px; background-color: white" class="pl-4 pb-3 text-muted">
                             <li><span>Услуги гражданам</span></li>
                             <li><span>Обслуживание юридических лиц</span></li>
-                            <li><span>Вернем деньги за путёвки в связи с пандемией <span style="color: red">covid-19</span></span></li>
+                            <li><span>Вернем деньги за путёвки в связи с пандемией <span
+                                    style="color: red">covid-19</span></span></li>
                             <li><span>Помощь призывникам</span></li>
                             <li><span>Автовладельцам</span></li>
                             <li><span>Услуги организациям</span></li>
@@ -1223,9 +1262,18 @@
 </div>
 
 <!-- Bootstrap core JavaScript -->
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/popper/popper.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--<script src="vendor/jquery/jquery.min.js"></script>-->
+<!--<script src="vendor/popper/popper.min.js"></script>-->
+<!--<script src="vendor/bootstrap/js/bootstrap.min.js"></script>-->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 
 <!-- Plugin JavaScript -->
 <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
@@ -1311,6 +1359,34 @@
     a.src = (document.location.protocol == "https:" ? "https:" : "http:") + "//ucalc.pro/api/widget.js?id=272904&t=" + Math.floor(new Date() / 18e5);
     document.getElementsByTagName(h)[0].appendChild(a)
 })();</script>
+
+
+<script>
+    function raschitat() {
+        variant = $('input[name=var]:checked').val();
+        sotrudnik = document.getElementById('sotrudnik').value;
+        opera = document.getElementById('opera').value;
+        summa = 0;
+        if (variant == 4) {
+            summa = 1500;
+        } else if (variant == 1) {
+            summa = 7000
+        } else if (variant == 2) {
+            summa = 6500
+        } else if (variant == 3) {
+            summa = 6000
+        }
+        if (variant != 4) {
+            if (opera > 20) {
+                summa += (opera - 20) * 150;
+            }
+            if (sotrudnik > 2) {
+                summa += (sotrudnik - 2) * 500;
+            }
+        }
+        document.getElementById('rez').innerHTML = summa + " Руб.";
+    }
+</script>
 
 </body>
 

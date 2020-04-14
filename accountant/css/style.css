@@ -387,3 +387,30 @@ li span {
     background: url(img/how_work/work_tmb.png) no-repeat 100%;
     background-size: contain;
 }
+.webform-input {
+    border-bottom: 2px solid rgb(92, 71, 56);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: none;
+    color: #b4b4b4;
+}
+
+.webform-input:focus {
+    border-bottom: 2px solid rgb(92, 71, 56);
+    background: none;
+}
+
+.webform-input:hover {
+    border-bottom: 2px solid rgb(92, 71, 56);
+    background: none;
+}
+
+.webform-input:active {
+    border-bottom: 2px solid rgb(92, 71, 56);
+    background: none;
+}
+.custom-control-input:checked~.custom-control-label::before
+{
+    background-color: #7e6547!important;
+}
