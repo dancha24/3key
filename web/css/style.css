@@ -392,3 +392,10 @@ li span {
     display: block;
     margin-top: 0;
 }
+
+.yakor {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: -150px;
+}

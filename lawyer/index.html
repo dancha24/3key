@@ -221,6 +221,7 @@
                                 100%</a></li>
                             <li><a style="color: black">Услуга может оказываться дистанционно</a></li>
                         </ul>
+                        <div id="covid" class="yakor"></div>
                     </div>
                 </div>
             </div>
@@ -452,6 +453,7 @@
                             <li><a style="color: black">Наложение алиментных обязательств на участников семейных правоотношений(родителей, детей, супругов).</a></li>
                             <li><a style="color: black">Перерасчет суммы, взысканных алиментов.</a></li>
                         </ul>
+                        <div id="family" class="yakor"></div>
                     </div>
                 </div>
             </div>
@@ -469,6 +471,7 @@
                             <li><a style="color: black">Замены на схожий товар с возмещением разницы в цене</a></li>
                             <li><a style="color: black">Устранения выявленных недостатков на безвозмездной или платной основе</a></li>
                         </ul>
+                        <div id="potreb" class="yakor"></div>
                         <p>Мы отстоим ваши интересы в суде или вернем деньги за услуги!</p>
                     </div>
                 </div>
@@ -489,6 +492,7 @@
                             <li><a style="color: black">Возврат собственности организации.</a></li>
                             <li><a style="color: black">Устранение препятствий в использовании имущества.</a></li>
                         </ul>
+                        <div id="arbi" class="yakor"></div>
                         <h6 class="pb-2">Дела особой подсудности. К ним относится рассмотрение вопросов:</h6>
                         <ul class="batya-skazal-text-zdelat-bolshe">
                             <li><a style="color: black">Признания организации банкротом.</a></li>
@@ -942,6 +946,41 @@
         h.parentNode.insertBefore(s, h);
     })(window, document, 'https://cdn.bitrix24.ru/b7087087/crm/tag/call.tracker.js');
 </script>
+
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    if (window.location.href.indexOf("covid") > -1) {
+      $('#collapse14').collapse({
+          show: true})
+    }
+  });
+</script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    if (window.location.href.indexOf("family") > -1) {
+      $('#collapse17').collapse({
+          show: true})
+    }
+  });
+</script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    if (window.location.href.indexOf("potreb") > -1) {
+      $('#collapse18').collapse({
+          show: true})
+    }
+  });
+</script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    if (window.location.href.indexOf("arbi") > -1) {
+      $('#collapse19').collapse({
+          show: true})
+    }
+  });
+</script>
+
 </body>
 
 </html>

@@ -414,3 +414,10 @@ li span {
 {
     background-color: #7e6547!important;
 }
+
+.yakor {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: -150px;
+}

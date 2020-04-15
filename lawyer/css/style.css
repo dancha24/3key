@@ -401,3 +401,10 @@ li span {
     background-position: center center;
     color: white;
 }
+
+.yakor {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: -150px;
+}
