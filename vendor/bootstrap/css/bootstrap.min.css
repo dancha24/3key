@@ -2540,7 +2540,7 @@ tbody.collapse.show {
     position: relative;
     height: 0;
     overflow: hidden;
-    transition: height .35s ease
+    transition: height .35s ease;
 }
 
 .dropdown, .dropup {
