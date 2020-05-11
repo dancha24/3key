@@ -412,6 +412,16 @@ li span {
     color: white;
 }
 
+.line-da {
+    background-color: #b4b4b4;
+    height: 2px;
+}
+
+.line-da-green {
+    background-color: #28BE52;
+    height: 4px;
+}
+
 .input-no-back {
     border-bottom: 2px solid rgb(92, 71, 56);
     border-top: none;
