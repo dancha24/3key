@@ -1534,7 +1534,7 @@ body {
     /*HEADER*/
     .b-header {
         min-height: 875px;
-         padding-top: 295px;
+        /* padding-top: 295px; */
         padding-bottom: 60px;
         background-color: #f7f6f4;
         background-image: url(../img/site/bg-header-lg.png);
