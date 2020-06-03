@@ -1184,7 +1184,7 @@ body {
     }
     .b-warranty__item-1 {
         position: relative;
-        font-size: 33px;
+        font-size: 27px;
         line-height: 45px;
         max-width: 460px;
         margin: 0 auto;
@@ -1214,7 +1214,7 @@ body {
     .b-warranty__item-2 {
         position: relative;
         font-weight: bold;
-        font-size: 33px;
+        font-size: 27px;
         line-height: 45px;
         text-align: center;
         color: #000000;
@@ -1227,7 +1227,7 @@ body {
     .b-warranty__item-3 {
         position: relative;
         font-weight: bold;
-        font-size: 45px;
+        font-size: 25px;
         line-height: 55px;
         text-align: center;
         color: #000000;
@@ -1672,7 +1672,7 @@ body {
     }
     .b-warranty__item-1 {
         position: relative;
-        font-size: 37px;
+        font-size: 27px;
         line-height: 55px;
         max-width: 990px;
         margin: 0 auto;
@@ -1702,7 +1702,7 @@ body {
     .b-warranty__item-2 {
         position: relative;
         font-weight: bold;
-        font-size: 33px;
+        font-size: 25px;
         line-height: 45px;
         text-align: center;
         color: #000000;
@@ -1715,7 +1715,7 @@ body {
     .b-warranty__item-3 {
         position: relative;
         font-weight: bold;
-        font-size: 45px;
+        font-size: 38px;
         line-height: 55px;
         text-align: center;
         color: #000000;
