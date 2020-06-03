@@ -268,7 +268,7 @@ body {
 /*HEADER*/
 .b-header {
     min-height: 490px;
-    padding-top: 120px;
+    /* padding-top: 120px; */
     padding-bottom: 60px;
     background-color: #f7f6f4;
     background-image: url(../img/site/bg-header-sm.png);
@@ -1024,7 +1024,7 @@ body {
     .b-header {
         position: relative;
         min-height: 783px;
-        padding-top: 225px;
+        /* padding-top: 225px; */
         background-color: #f7f6f4;
         background-image: url(../img/site/bg-header-md.png);
         background-repeat: no-repeat;
@@ -1534,7 +1534,7 @@ body {
     /*HEADER*/
     .b-header {
         min-height: 875px;
-        padding-top: 295px;
+        /* padding-top: 295px; */
         padding-bottom: 60px;
         background-color: #f7f6f4;
         background-image: url(../img/site/bg-header-lg.png);
