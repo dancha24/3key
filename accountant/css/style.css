@@ -554,6 +554,33 @@ li span {
     white-space: nowrap !important;
     vertical-align: middle !important;
 }
+.webform-input {
+    border-bottom: 2px solid rgb(40, 190, 82);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: none;
+    color: #b4b4b4;
+}
+
+.webform-input:focus {
+    border-bottom: 2px solid rgb(40, 190, 82);
+    background: none;
+}
+
+.webform-input:hover {
+    border-bottom: 2px solid rgb(40, 190, 82);
+    background: none;
+}
+
+.webform-input:active {
+    border-bottom: 2px solid rgb(40, 190, 82);
+    background: none;
+}
+.custom-control-input:checked~.custom-control-label::before
+{
+    background-color: #28BE52!important;
+}
 
 .yakor {
     height: 20px;

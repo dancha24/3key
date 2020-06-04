@@ -13,7 +13,9 @@
     <title>3Кей</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<!--    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/f3bca98bf0.js" crossorigin="anonymous"></script>
@@ -98,9 +100,9 @@
                                 class="img-fluid" src="img/tel.png">
                         </a></div>
                         <div class="col-8">
-                            <p class="text-white"><b>+7-384-265-01-20</b></p>
-                            <p class="text-white"><small>ПН-ПТ 10:00 - 19:00</small></p>
-                            <p class="text-white"><small>СБ-ВС 12:00 - 14:00</small></p>
+                            <p class="text-white mb-0"><b>+7-384-265-01-20</b></p>
+                            <p class="text-white mb-0"><small>ПН-ПТ 10:00 - 19:00</small></p>
+                            <p class="text-white mb-0"><small>СБ-ВС 12:00 - 14:00</small></p>
                         </div>
                     </div>
                 </li>
@@ -718,49 +720,49 @@
     </div>
 </section>
 
-<!--<section class="bg-light pt-5 how_work" id="calc">-->
-<!--    <div class="container px-lg-5">-->
-<!--        <div class="text-center pb-3">-->
-<!--            <h2>Расчет стоимости обслуживания</h2>-->
-<!--        </div>-->
-<!--        <div class="px-lg-5" onchange="raschitat()">-->
-<!--            <div class="form-row justify-content-center pt-3">-->
-<!--                <div class="col-md-6">-->
-<!--                    <label style="font-weight: 700;">Система налогообложения</label>-->
-<!--                    <div class="custom-control custom-radio pb-3">-->
-<!--                        <input type="radio" id="customRadio1" name="var" value="1" class="custom-control-input">-->
-<!--                        <label class="custom-control-label" for="customRadio1">ОСНО</label>-->
-<!--                    </div>-->
-<!--                    <div class="custom-control custom-radio pb-3">-->
-<!--                        <input type="radio" id="customRadio2" name="var" value="2" class="custom-control-input">-->
-<!--                        <label class="custom-control-label" for="customRadio2">УСН 15%</label>-->
-<!--                    </div>-->
-<!--                    <div class="custom-control custom-radio pb-3">-->
-<!--                        <input type="radio" id="customRadio3" name="var" value="3" class="custom-control-input">-->
-<!--                        <label class="custom-control-label" for="customRadio3">УСН 6%</label>-->
-<!--                    </div>-->
-<!--                    <div class="custom-control custom-radio pb-3">-->
-<!--                        <input checked type="radio" id="customRadio4" name="var" value="4" class="custom-control-input">-->
-<!--                        <label class="custom-control-label" for="customRadio4">Нулевая отчётность</label>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="col-md-6">-->
-<!--                    <label style="font-weight: 700;">Количество операций в месяц</label>-->
-<!--                    <input name="opera" type="text" class="webform-input form-control mb-2 mr-sm-2" id="opera"-->
-<!--                           placeholder="Кол-во">-->
-<!--                    <label class="pt-3" style="font-weight: 700;">Численность сотрудников</label>-->
-<!--                    <input name="sotrudnik" type="text" class="webform-input form-control mb-2 mr-sm-2" id="sotrudnik"-->
-<!--                           placeholder="Кол-во">-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="form-row justify-content-center pt-2 px-3">-->
-<!--                <div class="col-12">-->
-<!--                    <h5>Итого: <span id="rez">1500 Руб.</span></h5>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
+<section class="bg-light pt-5 how_work" id="calc">
+    <div class="container px-lg-5">
+        <div class="text-center pb-3">
+            <h2>Расчет стоимости обслуживания</h2>
+        </div>
+        <div class="px-lg-5" onchange="raschitat()">
+            <div class="form-row justify-content-center pt-3">
+                <div class="col-md-6">
+                    <label style="font-weight: 700;">Система налогообложения</label>
+                    <div class="custom-control custom-radio pb-3">
+                        <input type="radio" id="customRadio1" name="var" value="1" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadio1">ОСНО</label>
+                    </div>
+                    <div class="custom-control custom-radio pb-3">
+                        <input type="radio" id="customRadio2" name="var" value="2" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadio2">УСН 15%</label>
+                    </div>
+                    <div class="custom-control custom-radio pb-3">
+                        <input type="radio" id="customRadio3" name="var" value="3" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadio3">УСН 6%</label>
+                    </div>
+                    <div class="custom-control custom-radio pb-3">
+                        <input checked type="radio" id="customRadio4" name="var" value="4" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadio4">Нулевая отчётность</label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label style="font-weight: 700;">Количество операций в месяц</label>
+                    <input name="opera" type="text" class="webform-input form-control mb-2 mr-sm-2" id="opera"
+                           placeholder="Кол-во">
+                    <label class="pt-3" style="font-weight: 700;">Численность сотрудников</label>
+                    <input name="sotrudnik" type="text" class="webform-input form-control mb-2 mr-sm-2" id="sotrudnik"
+                           placeholder="Кол-во">
+                </div>
+            </div>
+            <div class="form-row justify-content-center pt-2 px-3">
+                <div class="col-12">
+                    <h5>Итого: <span id="rez">1500 Руб.</span></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <section style="background-color: #e8e8e861" class="pt-5 pb-3" id="what">
     <div class="container">
