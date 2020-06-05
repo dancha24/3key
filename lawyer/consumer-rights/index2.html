@@ -24,29 +24,29 @@
                 </span>
     </div>
     <div class="order-lg-2">
-        <a class="navbar-brand mr-auto" href="#">
+        <a class="navbar-brand mr-auto" href="#top">
             <img alt="Компания 3Key" class="b-navbar-img" src="assets/img/site/logo.png"/>
         </a>
     </div>
     <div class="order-lg-3 order-sm-4 collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#top">Главная <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Услуги</a>
+                <a class="nav-link" href="#serv">Услуги</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Прайс</a>
+                <a class="nav-link" href="#prise">Прайс</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">О компании</a>
+                <a class="nav-link" href="#about">О компании</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Отзывы</a>
+                <a class="nav-link" href="#rec">Отзывы</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Контакты</a>
+                <a class="nav-link" href="#cont">Контакты</a>
             </li>
         </ul>
     </div>
@@ -77,7 +77,7 @@
 
 <!--  -->
 <!-- HEADER -->
-<div class="b-header pt-5">
+<div id="top" class="b-header pt-5">
     <div class="container pt-5">
         <div class="b-header__insert pt-5">
             <h1 class="b-header__title pt-5">ЗАЩИТА ПРАВ ПОТРЕБИТЕЛЕЙ КЕМЕРОВО</h1>
@@ -110,7 +110,7 @@
 
 <!--  -->
 <!-- HELP -->
-<div class="b-help">
+<div id="serv" class="b-help">
     <div class="container">
         <div class="b-help__title">
             ХОТИТЕ ВЕРНУТЬ ДЕНЬГИ? ВЗЫСКАТЬ ДОЛГ. <br>ВОЗМЕЩЕНИЕ ВРЕДА
@@ -229,7 +229,7 @@
 <!--  -->
 <div class="b-header__text pb-5">Мы делаем жизнь справедливее</div>
 <!-- COST -->
-<div class="b-cost">
+<div id="prise" class="b-cost">
     <div class="container">
         <div class="b-cost__title">СТОИМОСТЬ УСЛУГ</div>
         <div class="b-cost__items">
@@ -298,7 +298,7 @@
 
 <!--  -->
 <!-- ABOUT -->
-<div class="b-about">
+<div id="about" class="b-about">
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-6 col-xl-6 col-extra">
@@ -340,7 +340,7 @@
 
 <!--  -->
 <!-- REPORTS -->
-<div class="b-reports">
+<div id="rec" class="b-reports">
     <div class="container">
         <div class="b-reports__title">ОТЗЫВЫ КЛИЕНТОВ</div>
     </div>
@@ -392,7 +392,7 @@
 
 <!--  -->
 <!-- CONTACTS -->
-<div class="b-contacts">
+<div id="cont" class="b-contacts">
     <div class="container">
         <div class="b-contacts__title">КОНТАКТЫ</div>
         <div itemscope="" itemtype="http://schema.org/Organization">
@@ -453,18 +453,23 @@
 <div class="b-form-wrapper text-center">
     <div class="container">
         <div class="b-form-wrapper__title">ОСТАЛИСЬ ВОПРОСЫ?</div>
-        <form class="b-form" action="action" method="post">
-            <div class="form-group">
-                <label class="b-form__label" for="name">Ваше имя:</label>
-                <input class="b-form__input form-control" type="email" id="name" placeholder="Илья Романов"/>
-            </div>
-            <div class="form-group">
-                <label class="b-form__label" for="phone">Ваш номер телефона:</label>
-                <input class="b-form__input form-control" type="tel" id="phone" placeholder="+7 ( - )    -     -"/>
-            </div>
-            <button class="b-form__submit btn btn-success" type="submit">Заказать бесплатную консультацию</button>
-            <div class="b-form__hint">Звонок бесплатный</div>
-        </form>
+        <script id="bx24_form_inline" data-skip-moving="true">
+            (function (w, d, u, b) {
+                w['Bitrix24FormObject'] = b;
+                w[b] = w[b] || function () {
+                    arguments[0].ref = u;
+                    (w[b].forms = w[b].forms || []).push(arguments[0])
+                };
+                if (w[b]['forms']) return;
+                var s = d.createElement('script');
+                s.async = 1;
+                s.src = u + '?' + (1 * new Date());
+                var h = d.getElementsByTagName('script')[0];
+                h.parentNode.insertBefore(s, h);
+            })(window, document, 'https://avtopark.bitrix24.ru/bitrix/js/crm/form_loader.js', 'b24form');
+
+            b24form({"id": "40", "lang": "ru", "sec": "gezcxj", "type": "inline"});
+        </script>
     </div>
 </div>
 
