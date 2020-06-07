@@ -379,7 +379,7 @@
                 </div>
             </div>
         </div>
-        <div class="row justify-content-center py-2 text-left px-5">
+        <div id="tarifs" class="row justify-content-center py-2 text-left px-5">
             <div class="col-12">
                 <a style="text-decoration: none" data-toggle="collapse" href="#collapse34" aria-expanded="true"
                    aria-controls="collapse34">
@@ -1169,6 +1169,15 @@
     gtag('js', new Date());
 
     gtag('config', 'UA-160620001-1');
+</script>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    if (window.location.href.indexOf("tarifs") > -1) {
+      $('#collapse34').collapse({
+          show: true})
+    }
+  });
 </script>
 
 <!-- Скрипт подключения сайта битрикс -->
