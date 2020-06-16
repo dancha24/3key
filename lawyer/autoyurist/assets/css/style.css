@@ -511,7 +511,7 @@ body {
 .b-process__hint {
     margin-top: 65px;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 30px;
     color: #ffffff;
 }
@@ -1185,7 +1185,7 @@ body {
     }
     .b-process__hint {
         margin-top: 80px;
-        font-size: 26px;
+        font-size: 22px;
         line-height: 39px;
     }
     .b-stage__button-wrapper {
@@ -1628,7 +1628,7 @@ body {
         line-height: 28px;
     }
     .b-process__hint {
-        font-size: 32px;
+        font-size: 28px;
         line-height: 48px;
     }
     .b-stage__button-wrapper {
