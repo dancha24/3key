@@ -5,7 +5,7 @@
 jQuery(document).ready(function () {
     jQuery(window).bind("load", function () {
         //Пример исключения ссылки:
-        jQuery('a[href*="#"]:not([href="#"],[href="#spu-209"],[href="#collapse11"],[href="#collapse12"],[href="#collapse13"],[href="#collapse14"],[href="#collapse15"],[href="#collapse16"],[href="#collapse17"],[href="#collapse18"],[href="#spu-212"],[href="#spu-213"],[href="#spu-214"],[href="#spu-215"],[href="#spu-217"])').click(function () {
+        jQuery('a[href*="#"]:not([href="#"],[href="#spu-209"],[href="#collapse11"],[href="#collapse21"],[href="#collapse22"],[href="#collapse23"],[href="#collapse24"],[href="#collapse12"],[href="#collapse13"],[href="#collapse14"],[href="#collapse15"],[href="#collapse16"],[href="#collapse17"],[href="#collapse18"],[href="#spu-212"],[href="#spu-213"],[href="#spu-214"],[href="#spu-215"],[href="#spu-217"])').click(function () {
             // jQuery('a:not(.spu-clickable)[href*="#"]:not([href="#"])').click(function() {
             if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') ||
                 location.hostname == this.hostname) {
