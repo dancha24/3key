@@ -303,34 +303,114 @@ li span {
 /*    !*transition-duration: 10s;*!*/
 /*}*/
 
-.card-serv {
+.card-what {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     border-radius: 10px;
+    -webkit-box-shadow: 0 0 9px 4px rgba(0, 0, 0, 0.2);
     box-shadow: 0 0 9px 4px rgba(0, 0, 0, 0.2);
     /*border: 2px solid #5C4738;*/
     /*background: #ae866d;*/
     color: #000000;
     height: 220px;
-    width: 260px;
+    width: 90%;
+
     vertical-align: top;
     /*font-weight: 600;*/
+    -webkit-transition-duration: .5s;
     transition-duration: .5s;
     font-family: Montserrat, 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
+    padding: 15px;
+    margin: 0 auto;
 }
 
-.card-serv i {
-    color: #28BE52;
+.card-serv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 9px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 9px 4px rgba(0, 0, 0, 0.2);
+    /*border: 2px solid #5C4738;*/
+    /*background: #ae866d;*/
+    color: #000000;
+    height: 350px;
+    width: 90%;
+
+    vertical-align: top;
+    /*font-weight: 600;*/
+    -webkit-transition-duration: .5s;
     transition-duration: .5s;
+    font-family: Montserrat, 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    padding: 15px;
+    margin: 0 auto;
 }
 
-.card-serv:hover i {
-    color: white;
+.service-img {
+    width: 100%;
+    max-height: 159px;
+}
+
+.card-serv__btn {
+    width: 37px;
+    height: 37px;
+    border-radius: 10px;
+    background: #28be52;
+    color: #fff !important;
+    font-size: 20px;
+    text-align: center;
+    padding: 8px;
+}
+
+.fa-chevron-right {
+    z-index: 1;
+    color: #fff !important;
+}
+
+.card-serv__submit {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-serv__title {
+    margin-top: 20px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 32px;
 }
 
 .card-serv-hover:hover {
     background: #28BE52;
-    color: white;
+    color: #fff;
+}
+
+.all_services {
+    padding: 80px 0px 80px;
+    background: #f4f4f4;
+}
+
+.all_services-text {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.legal_price {
+    padding: 200px 0px 200px;
+    background: #fff;
+}
+
+.legal_price-title {
+    text-align: center;
+    margin-bottom: 65px;
 }
 
 .card-about {
