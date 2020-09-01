@@ -110,13 +110,13 @@
         </div>
     </div>
 </nav>-->
-
-<?php $MERCHANT_ID   = 4778; ?>
-<?php $SECRET_WORD   = 'DqWLiwdmES6_2LVcyaybtLCUMcsVCGUI'; ?>
-<?php $ORDER_AMOUNT  = 10; ?>
-<?php $PAYMENT_ID    = time(); ?>
-<?php $sign = md5($MERCHANT_ID.':'.$ORDER_AMOUNT.':'.$SECRET_WORD.':'.$PAYMENT_ID); ?>
-
+<!— PHP —>
+$MERCHANT_ID   = 4778;
+$SECRET_WORD   = 'DqWLiwdmES6_2LVcyaybtLCUMcsVCGUI';
+$ORDER_AMOUNT  = 10;
+$PAYMENT_ID    = time();
+$sign = md5($MERCHANT_ID.':'.$ORDER_AMOUNT.':'.$SECRET_WORD.':'.$PAYMENT_ID);
+<!— ENDPHP —>
 <form method='get' action='https://enot.io/pay'>
     <input type='hidden' name='m' value='<?=$MERCHANT_ID?>'>
     <input type='hidden' name='oa' value='<?=$ORDER_AMOUNT?>'>
