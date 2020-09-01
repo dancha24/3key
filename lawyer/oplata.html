@@ -111,22 +111,19 @@
     </div>
 </nav>-->
 
-         <?php
-         $MERCHANT_ID   = 4778;                 // ID магазина
-         $SECRET_WORD   = 'DqWLiwdmES6_2LVcyaybtLCUMcsVCGUI';   // Секретный ключ
-         $ORDER_AMOUNT  = 10;                 // Сумма заказа
-         $PAYMENT_ID    = time();             // ID заказа (мы используем time(), чтобы был всегда уникальный ID)
+<?php $MERCHANT_ID   = 4778; ?>
+<?php $SECRET_WORD   = 'DqWLiwdmES6_2LVcyaybtLCUMcsVCGUI'; ?>
+<?php $ORDER_AMOUNT  = 10; ?>
+<?php $PAYMENT_ID    = time(); ?>
+<?php $sign = md5($MERCHANT_ID.':'.$ORDER_AMOUNT.':'.$SECRET_WORD.':'.$PAYMENT_ID); ?>
 
-         $sign = md5($MERCHANT_ID.':'.$ORDER_AMOUNT.':'.$SECRET_WORD.':'.$PAYMENT_ID);  //Генерация ключа
-         ?>
-
-         <form method='get' action='https://enot.io/pay'>
-         <input type='hidden' name='m' value='<?=$MERCHANT_ID?>'>
-         <input type='hidden' name='oa' value='<?=$ORDER_AMOUNT?>'>
-         <input type='hidden' name='o' value='<?=$PAYMENT_ID?>'>
-         <input type='hidden' name='s' value='<?=$sign?>'>
-         <input type="submit" value="Оплатить">
-         </form>
+<form method='get' action='https://enot.io/pay'>
+    <input type='hidden' name='m' value='<?=$MERCHANT_ID?>'>
+    <input type='hidden' name='oa' value='<?=$ORDER_AMOUNT?>'>
+    <input type='hidden' name='o' value='<?=$PAYMENT_ID?>'>
+    <input type='hidden' name='s' value='<?=$sign?>'>
+    <input type="submit" value="Оплатить">
+</form>
 
 <!-- Bootstrap core JavaScript -->
 <script src="vendor/jquery/jquery.min.js"></script>
