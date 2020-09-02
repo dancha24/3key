@@ -21,7 +21,7 @@
 </head>
 <style>
     .btn {
-        width: 370px;
+        width: 100%;
         height: 60px;
         background: #28BE52;
         border-radius: 10px;
@@ -29,13 +29,17 @@
         color: white;
         font-weight: 600;
         font-size: 18px;
+        margin-bottom: 10px;
+        margin-top: 10px;
     }
+
     .ots {
         margin-bottom: 15px;
         margin-top: 15px;
     }
 
     #regForm {
+        font-family: Roboto;
         /*margin: 100px auto;*/
         padding: 40px;
         padding-top: 20px;
@@ -45,8 +49,8 @@
 
     /* Style the input fields */
     .input1 {
-        width: 725px;
-        height: 63px;
+        width: 100%;
+        height: 10%;
         border: none;
 
         background: #E5E5E5;
@@ -61,8 +65,8 @@
 
     /* Style the input fields */
     .input2 {
-        width: 725px;
-        height: 63px;
+        width: 100%;
+        height: 10%;
         border: none;
 
         background: #E5E5E5;
@@ -117,11 +121,25 @@
     }
 
     .backform {
-        width: 1060px;
-        height: 450px;
+        width: 100%;
+        /*height: 450px;*/
 
         background: #EBEBEB;
         border-radius: 20px;
+    }
+
+    @media screen and (min-device-width: 640px) {
+        .input1 {
+            width: 70%;
+        }
+
+        .input2 {
+            width: 70%;
+        }
+
+        .btn {
+            width: 370px;
+        }
     }
 </style>
 
@@ -133,59 +151,65 @@
         <!-- One "tab" for each step in the form: -->
         <div class="tab">
             <p class="ots">Шаг <span style="color: #28BE52">01/</span>04</p>
-            Введите полную сумму задолженности:
-            <input name="sum" class="input1 ots" placeholder="Полная сумма задолженности" oninput="this.className = 'input1'">
+            <p>Введите полную сумму задолженности:</p>
+            <input name="sum" class="input1 ots" placeholder="Полная сумма задолженности"
+                   oninput="this.className = 'input1'">
         </div>
 
         <div class="tab">
             <p class="ots">Шаг <span style="color: #28BE52">02/</span>04</p>
-            Наличие ипотеки:
-            <p style="margin-bottom: 20px; margin-top: 20px" class="textin" align="left"><input type="radio" name="ipotek" value="yes" oninput="this.className = ''">Есть
-            </p>
-            <p style="margin-bottom: 20px; margin-top: 0px" class="textin" align="left"><input type="radio" name="ipotek" value="no" oninput="this.className = ''">Нет
-            </p>
+            <p>Наличие ипотеки:</p>
+            <input style="margin-bottom: 20px; margin-top: 20px" id="ipy" type="radio" name="ipotek" value="yes"
+                   oninput="this.className = ''">
+            <label class="textin" for="ipy">Есть</label><br>
+            <input style="margin-bottom: 20px; margin-top: 0px" id="ipn" type="radio" name="ipotek" value="no"
+                   oninput="this.className = ''">
+            <label class="textin" for="ipn">Нет</label><br>
         </div>
 
         <div class="tab">
             <p class="ots">Шаг <span style="color: #28BE52">03/</span>04</p>
-            Имущество:<br>
-            <input style="margin-bottom: 20px; margin-top: 20px" class="textin" type="checkbox" id="soms" name="mush" value="sob" oninput="this.className = ''">
+            <p>Имущество:</p>
+            <input style="margin-bottom: 20px; margin-top: 20px" class="textin" type="checkbox" id="soms" name="mush"
+                   value="sob" oninput="this.className = ''">
             <label class="textin" for="soms">Имущество в собственности</label><br>
-            <input style="margin-bottom: 20px; margin-top: 0px" class="textin" type="checkbox" id="deal" name="mush" value="deal" oninput="this.className = ''">
+            <input style="margin-bottom: 20px; margin-top: 0px" class="textin" type="checkbox" id="deal" name="mush"
+                   value="deal" oninput="this.className = ''">
             <label class="textin" for="deal">Сделки с имуществом за 3 года</label>
         </div>
 
         <div class="tab">
             <p class="ots">Шаг <span style="color: #28BE52">04/</span>04</p>
-            Другие вопросы:<br>
-            <input style="margin-bottom: 20px; margin-top: 20px" class="textin" type="checkbox" id="ofworck" name="other" value="ofworck" oninput="this.className = ''">
+            <p>Другие вопросы:</p>
+            <input style="margin-bottom: 20px; margin-top: 20px" class="textin" type="checkbox" id="ofworck"
+                   name="other" value="ofworck" oninput="this.className = ''">
             <label class="textin" for="ofworck">Официально трудоустроены?</label><br>
-            <input style="margin-bottom: 0px; margin-top: 0px" class="textin" type="checkbox" id="brack" name="other" value="brack" oninput="this.className = ''">
+            <input style="margin-bottom: 20px; margin-top: 0px" class="textin" type="checkbox" id="brack" name="other"
+                   value="brack" oninput="this.className = ''">
             <label class="textin" for="brack">Состоите в браке?</label>
         </div>
 
         <div class="tab">
-            <p class="ots">Укажите Ваш телефон</p>
-            для получения результатов:
+            <p class="ots">Укажите Ваш телефон для получения результатов:</p>
             <input name="name" class="input2" placeholder="Имя" oninput="this.className = 'input2'">
             <input name="phone" class="input2" placeholder="Телефон" oninput="this.className = 'input2'">
         </div>
 
-        <div style="overflow:auto;">
-            <div style="float:left;">
+        <div style="width: 100%; overflow:auto;">
+            <div style="width: 100%; float:left;">
                 <button class="btn" type="button" id="prevBtn" onclick="nextPrev(-1)">Предыдущий</button>
                 <button class="btn" type="button" id="nextBtn" onclick="nextPrev(1)">Следующий</button>
             </div>
         </div>
 
-<!--         Circles which indicates the steps of the form:-->
-<!--        <div style="text-align:center;margin-top:40px;">-->
-<!--            <span class="step"></span>-->
-<!--            <span class="step"></span>-->
-<!--            <span class="step"></span>-->
-<!--            <span class="step"></span>-->
-<!--            <span class="step"></span>-->
-<!--        </div>-->
+        <!--         Circles which indicates the steps of the form:-->
+        <!--        <div style="text-align:center;margin-top:40px;">-->
+        <!--            <span class="step"></span>-->
+        <!--            <span class="step"></span>-->
+        <!--            <span class="step"></span>-->
+        <!--            <span class="step"></span>-->
+        <!--            <span class="step"></span>-->
+        <!--        </div>-->
 
     </form>
 </div>
