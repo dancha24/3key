@@ -61,6 +61,7 @@
 
 
 <?php
+         $ORDER_AMOUNT   = $_GET['oa'];
          $MERCHANT_ID   = 4778;                 // ID магазина
          $SECRET_WORD   = 'DqWLiwdmES6_2LVcyaybtLCUMcsVCGUI';   // Секретный ключ
          $PAYMENT_ID    = time();             // ID заказа (мы используем time(), чтобы был всегда уникальный ID)
@@ -86,7 +87,7 @@
 <!--            <input type='hidden' name='oa' value='<?=$ORDER_AMOUNT?>'>-->
             <input type='hidden' name='o' value='<?=$PAYMENT_ID?>'>
             <input type='hidden' name='s' value='<?=$sign?>'>
-            <input type="submit" class="btn btn-danger" value="Вернуться на шлавную">
+            <input type="submit" class="btn btn-danger" value="Вернуться на главную">
             <input type="submit" class="btn btn-success" value="Оплатить">
         </form>
         <!--        </div>-->
