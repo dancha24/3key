@@ -1,5 +1,5 @@
 <?php
-         $ORDER_AMOUNT = $_POST['oa']
+         $ORDER_AMOUNT = $_POST['oa'];
          $MERCHANT_ID   = 4778;                 // ID магазина
          $SECRET_WORD   = 'DqWLiwdmES6_2LVcyaybtLCUMcsVCGUI';   // Секретный ключ
          $PAYMENT_ID    = time();             // ID заказа (мы используем time(), чтобы был всегда уникальный ID)
