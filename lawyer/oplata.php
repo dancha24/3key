@@ -5,5 +5,5 @@
 
          $sign = md5($MERCHANT_ID.':'.$ORDER_AMOUNT.':'.$SECRET_WORD.':'.$PAYMENT_ID);  //Генерация ключа
 
-$result = file_get_contents('https://enot.io/pay?m='.$MERCHANT_ID.'&oa='.$_POST['oa'].'&o='.$PAYMENT_ID.'&s='.$sign.'&c='$_POST['c'].'');
+$result = file_get_contents('https://enot.io/pay?m='.$MERCHANT_ID.'&oa='.$_POST['oa'].'&o='.$PAYMENT_ID.'&s='.$sign.'&c='.$_POST['c'].'');
 ?>
