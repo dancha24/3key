@@ -1,4 +1,3 @@
-<html lang="ru">
 
 <head>
 
@@ -64,7 +63,11 @@
 
 
 <body id="page-top">
-
+<script language="php">
+   echo ("вариант вставки кода 2");
+</script>
+<? echo ("вариант вставки кода 3"); ?>
+<?= текст ?> То же самое, что и "<? echo текст ?>"
 <!-- Navigation -->
 <!--<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
 
@@ -110,13 +113,6 @@
         </div>
     </div>
 </nav>-->
-<!— PHP —>
-$MERCHANT_ID   = 4778;
-$SECRET_WORD   = 'DqWLiwdmES6_2LVcyaybtLCUMcsVCGUI';
-$ORDER_AMOUNT  = 10;
-$PAYMENT_ID    = time();
-$sign = md5($MERCHANT_ID.':'.$ORDER_AMOUNT.':'.$SECRET_WORD.':'.$PAYMENT_ID);
-<!— ENDPHP —>
 <form method='get' action='https://enot.io/pay'>
     <input type='hidden' name='m' value='<?=$MERCHANT_ID?>'>
     <input type='hidden' name='oa' value='<?=$ORDER_AMOUNT?>'>
