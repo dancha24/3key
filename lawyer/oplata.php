@@ -5,5 +5,5 @@
          $PAYMENT_ID    = time();             // ID заказа (мы используем time(), чтобы был всегда уникальный ID)
 
          $sign = md5($MERCHANT_ID.':'.$ORDER_AMOUNT.':'.$SECRET_WORD.':'.$PAYMENT_ID);  //Генерация ключа
-header('Location: https://enot.io/pay?m='.$MERCHANT_ID.'&oa='.$ORDER_AMOUNT.'&o='.$PAYMENT_ID.'&s='.$sign.'&c='.$_POST['c'].'');
+header('Location: https://enot.io/pay?m='.$MERCHANT_ID.'&oa='.$ORDER_AMOUNT.'&o='.$PAYMENT_ID.'&s='.$sign.'&cf='.$_POST['com'].'');
 ?>
