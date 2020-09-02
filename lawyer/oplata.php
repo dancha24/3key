@@ -115,8 +115,8 @@
 </nav>-->
 
 <?php
-         $MERCHANT_ID   = 15;                 // ID магазина
-         $SECRET_WORD   = 'Секретный ключ';   // Секретный ключ
+         $MERCHANT_ID   = 4778;                 // ID магазина
+         $SECRET_WORD   = 'DqWLiwdmES6_2LVcyaybtLCUMcsVCGUI';   // Секретный ключ
          $ORDER_AMOUNT  = 10;                 // Сумма заказа
          $PAYMENT_ID    = time();             // ID заказа (мы используем time(), чтобы был всегда уникальный ID)
 
