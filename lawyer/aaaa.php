@@ -1,5 +1,6 @@
+<?php
 $url = 'https://bitrix24public.com/avtopark.bitrix24.ru/form/48/ebgsw1/';
-$data = array('key1' => 'value1', 'key2' => 'value2');
+$data = array('name' => $POST['name']);
 
 // use key 'http' even if you send the request to https://...
 $options = array(
@@ -14,3 +15,4 @@ $result = file_get_contents($url, false, $context);
 if ($result === FALSE) { /* Handle error */ }
 
 var_dump($result);
+?>
