@@ -1,6 +1,6 @@
 <?php
 $url = 'https://bitrix24public.com/avtopark.bitrix24.ru/form/48/ebgsw1/';
-$data = array('LEAD_NAME' => 'sadfasdfa');
+$data = array('LEAD_NAME' => $POST['name']);
 
 // use key 'http' even if you send the request to https://...
 $options = array(
