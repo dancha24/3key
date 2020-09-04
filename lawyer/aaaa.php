@@ -39,11 +39,11 @@ if ($result === FALSE) { /* Handle error */ }
     <link href="css/agency.min.css" rel="stylesheet">
 </head>
 <body>
-<div align="center" class="row justify-content-center">
+<div align="center" class="row justify-content-center mt-5">
     <div class="col-12 align-items-center">
         <h1>Заявка отправленна</h1>
         <p>Наш юрист свяжется с вами в ближайшее время</p>
-        <a href="https://xn--e1afec2al.xn--p1ai/bankrotam" ><button class="btn btn-xl btn-success">Вернуться на главную</button></a>
+        <a href="https://xn--e1afec2al.xn--p1ai/bankrotam" ><button class="mt-3 btn btn-success">Вернуться на главную</button></a>
     </div>
 </div>
 </body>
