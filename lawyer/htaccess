@@ -1,0 +1,30 @@
+ErrorDocument 403 /404.html
+ErrorDocument 404 /404.html
+
+DirectoryIndex page12133298.html
+
+RewriteEngine On
+
+RewriteCond %{HTTP:X-Scheme} =http
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} /robots.txt
+RewriteCond "%{DOCUMENT_ROOT}/robots_%{HTTP_HOST}.txt" -f
+RewriteRule ^(.*)$ robots_%{HTTP_HOST}.txt [NC,L]
+RewriteRule ^buh_outsourcing$ page12623185.html [NC]
+RewriteRule ^buh_outsourcing/$ page12623185.html [NC]
+
+RewriteRule ^buhgalter$ page12637329.html [NC]
+RewriteRule ^buhgalter/$ page12637329.html [NC]
+
+RewriteRule ^bankrotam$ page13564601.html [NC]
+RewriteRule ^bankrotam/$ page13564601.html [NC]
+
+RewriteRule ^aaaaphp$ page13670131.html [NC]
+RewriteRule ^aaaaphp/$ page13670131.html [NC]
+
+RewriteRule ^lfffffff$ page13923522.html [NC]
+RewriteRule ^lfffffff/$ page13923522.html [NC]
+
+RewriteRule ^favicon.ico$ https://static.tildacdn.com/tild3832-6365-4732-b665-346264666461/favicon.ico [R=302,L]
+
