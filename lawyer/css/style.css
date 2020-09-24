@@ -963,7 +963,14 @@ li span {
     color: #000000;
     height: 400px;
     width: 337px;
-    transition: opacity 1s ease-in-out;
+    transition: 1s;
+    transform-style: preserve-3d;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: rotateY(0deg);
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -moz-transform: rotateY(0deg);
 }
 
 .card-serv-bloc-none {
@@ -976,7 +983,14 @@ li span {
     color: #000000;
     height: 400px;
     width: 337px;
-    transition: opacity 0.3s ease-in-out;
+    transition: 1s;
+    transform-style: preserve-3d;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -moz-transform: rotateY(-180deg);
 }
 
 .card-serv-new-hover {
@@ -987,12 +1001,16 @@ li span {
 .card-serv-new-hover:hover .card-serv-bloc-none {
     opacity: 100;
     display: block;
-    transition: opacity 0.3s ease-in-out;
+    transform: rotateY(0deg); /* поворачиваем на 180 градусов по горизонтали */
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
 }
 
 .card-serv-new-hover:hover .card-serv-new {
     opacity: 0;
-    transition: opacity 1s ease-in-out;
+    transform: rotateY(180deg); /* поворачиваем на 180 градусов по горизонтали */
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
 }
 
 /*.card-serv-new:hover{*/

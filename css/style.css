@@ -850,3 +850,95 @@ li span {
     font-family: verdana;
     font-size: 50px;
 }
+
+.card-serv-new {
+    position: absolute;
+    justify-content: space-between;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 9px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 9px 4px rgba(0, 0, 0, 0.2);
+    /*border: 2px solid #5C4738;*/
+    /*background: #ae866d;*/
+    color: #000000;
+    height: 400px;
+    width: 337px;
+    transition: 1s;
+    transform-style: preserve-3d;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: rotateY(0deg);
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -moz-transform: rotateY(0deg);
+}
+
+.card-serv-bloc-none {
+    position: absolute;
+    /*display: none;*/
+    opacity: 0;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 9px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 9px 4px rgba(0, 0, 0, 0.2);
+    color: #000000;
+    height: 400px;
+    width: 337px;
+    transition: 1s;
+    transform-style: preserve-3d;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -moz-transform: rotateY(-180deg);
+}
+
+.card-serv-new-hover {
+    height: 400px;
+    width: 337px;
+}
+
+.card-serv-new-hover:hover .card-serv-bloc-none {
+    opacity: 100;
+    display: block;
+    transform: rotateY(0deg); /* поворачиваем на 180 градусов по горизонтали */
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+}
+
+.card-serv-new-hover:hover .card-serv-new {
+    opacity: 0;
+    transform: rotateY(180deg); /* поворачиваем на 180 градусов по горизонтали */
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+}
+
+/*.card-serv-new:hover{*/
+/*    display: none;*/
+/*}*/
+
+.card-serv-img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 225px !important;
+    max-height: 225px !important;
+}
+
+.card-serv-name {
+    margin: auto 0;
+}
+
+.card-serv-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 170%;
+}
+
+.card-serv-btn {
+    position: absolute;
+    bottom: 25px;
+    left: 31px;
+    border-radius: 10px !important;
+    background-color: #28BE52 !important;
+    border-color: #28BE52 !important;
+}
