@@ -1020,8 +1020,8 @@ li span {
 .card-serv-img {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    height: 225px !important;
-    max-height: 225px !important;
+    height: 280px !important;
+    max-height: 280px !important;
 }
 
 .card-serv-name {
@@ -1142,7 +1142,7 @@ li span {
 
 .card-serv-btn-2 {
     position: absolute;
-    bottom: 25px;
+    bottom: 10px;
     left: 75px;
     border-radius: 10px !important;
     background-color: #28BE52 !important;
