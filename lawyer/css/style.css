@@ -1043,3 +1043,16 @@ li span {
     background-color: #28BE52 !important;
     border-color: #28BE52 !important;
 }
+
+.card-ul {
+    list-style-position: outside !important;
+}
+
+.card-li {
+    list-style-image: url(../img/check.png); /* Путь к рисунку для установки маркера */
+    list-style-position: outside !important;
+}
+
+.card-li span{
+    color: black;
+}
