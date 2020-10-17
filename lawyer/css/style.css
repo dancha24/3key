@@ -1053,7 +1053,7 @@ li span {
     list-style-position: outside !important;
 }
 
-.card-li span{
+.card-li span {
     color: black;
 }
 
@@ -1147,4 +1147,50 @@ li span {
     border-radius: 10px !important;
     background-color: #28BE52 !important;
     border-color: #28BE52 !important;
+}
+
+@media screen and (max-device-width: 605px) {
+    .font-very-min {
+        font-size: 30px !important;
+    }
+}
+
+@media screen and (max-device-width: 360px) {
+    .card-serv-new {
+        width: 300px;
+    }
+
+    .card-serv-bloc-none {
+        width: 300px;
+    }
+
+    .card-serv-new-hover {
+        width: 300px;
+    }
+
+    .card-serv-img {
+        height: 250px !important;
+        max-height: 250px !important;
+    }
+
+    .card-serv-btn {
+        font-size: 16px!important;
+    }
+
+    .card-serv-new-2 {
+        width: 300px;
+    }
+
+    .card-serv-bloc-none-2 {
+        width: 300px;
+    }
+
+    .card-serv-new-hover-2 {
+        width: 300px;
+    }
+
+    .card-serv-img-2 {
+        height: 110px !important;
+        max-height: 110px !important;
+    }
 }
