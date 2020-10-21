@@ -1194,3 +1194,9 @@ li span {
         max-height: 110px !important;
     }
 }
+
+.shadow-suka {
+    background: #fc0; /* Цвет фона */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4); /* Параметры тени */
+    padding: 10px;
+}

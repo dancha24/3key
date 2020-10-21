@@ -346,49 +346,6 @@
 <!--    &lt;!&ndash;        прайс</a></small></p>&ndash;&gt;-->
 <!--</section>-->
 
-<div class="bg-warning mt-10 mx-xl-11 px-3 px-sm-9 py-5 py-sm-8 rounded shadow-large lax"
-     data-lax-translate-y="0 0, (vh/1.3) 250" data-lax-anchor="self"
-     style="backface-visibility: hidden; transform: translateY(199.787px);">
-    <div class="h2 mx-xl-9">Не можете понять какая услуга нужна именно вам?</div>
-    <p class="h5 font-weight-medium mx-xl-10 mb-7">Оставьте заявку на консультацию и наши юрист подскажет вам, как
-        правильно решить вашу проблему</p>
-    <!-- для узких вертикальных колонок, добавляем  class .vert-->
-    <style>
-        .vert .widthBut {
-            width: 100%;
-            margin-bottom: 10px;
-            font-size: 0.8em;
-        }
-
-        .vert .besplatno {
-            margin-top: 50px;
-        }
-
-        .lgLead .widthBut {
-            word-break: break-all;
-            font-size: 0.8em;
-        }
-    </style>
-    <form action="https://edin.center/api/lead" data-form-type="lead" method="post" class="text-left  ">
-        <div class="to-appointment clearfix ">
-            <input type="tel" name="lead[phone]" class="form-control widthBut " placeholder="Ваш номер телефона"
-                   data-validation="phone" required="" autocomplete="off" data-notsavetostate="true" maxlength="16">
-
-            <input type="submit" class=" btn btn-primary dependent-on-consent widthBut" value="Получить консультацию">
-        </div>
-        <label class="checkbox consent text-secondary move-up">
-            <input type="checkbox" name="consent" checked="">
-            <span class="checkbox__label">
-                    Я соглашаюсь с
-                    <a href="/privacy-policy.pdf" target="_blank" class="text-secondary text-nowrap">
-                        политикой конфиденциальности
-                    </a>
-                </span>
-        </label>
-        <input type="hidden" name="lead[usluga]" value="8">
-    </form>
-</div>
-
 
 <!--<section style="background-color: #e8e8e861" class="pt-5 pb-3" id="what">-->
 <!--    <div class="container">-->
