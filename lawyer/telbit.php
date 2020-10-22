@@ -1,6 +1,6 @@
 <?php
-$url = 'https://bitrix24public.com/avtopark.bitrix24.ru/form/28/kxdwn0/';
-$data = array('LEAD_NAME' => $_POST['name'], 'LEAD_PHONE' => 'Неизвестен');
+$url = 'https://bitrix24public.com/avtopark.bitrix24.ru/form/50/vhp70e/';
+$data = array('LEAD_PHONE' => $_POST['phone']);
 // use key 'http' even if you send the request to https://...
 $options = array(
     'http' => array(
@@ -14,7 +14,6 @@ $result = file_get_contents($url, false, $context);
 if ($result === FALSE) { /* Handle error */ }
 ?>
 <head>
-<meta http-equiv="refresh" content="1;URL=https://xn--h1apee0d.xn--3-jtbmc.xn--p1ai/" />
     <meta charset="utf-8">
     <meta name="description"
           content="3Кей, юридические услуги">
