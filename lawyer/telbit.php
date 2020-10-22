@@ -1,6 +1,6 @@
 <?php
-$url = 'https://bitrix24public.com/avtopark.bitrix24.ru/form/48/ebgsw1/';
-$data = array('LEAD_NAME' => $_POST['name'], 'LEAD_PHONE' => $_POST['phone'], 'LEAD_UF_CRM_1599198155' => $_POST['ipotek'], 'LEAD_UF_CRM_1599198221' => $_POST['mush'], 'LEAD_UF_CRM_1599198281' => $_POST['other'], 'LEAD_UF_CRM_1599198037' => $_POST['sum']);
+$url = 'https://bitrix24public.com/avtopark.bitrix24.ru/form/28/kxdwn0/';
+$data = array('LEAD_NAME' => $_POST['name'], 'LEAD_PHONE' => 'Неизвестен');
 // use key 'http' even if you send the request to https://...
 $options = array(
     'http' => array(
@@ -43,7 +43,7 @@ if ($result === FALSE) { /* Handle error */ }
     <div class="col-12 align-items-center">
         <h1>Заявка отправленна</h1>
         <p>Наш юрист свяжется с вами в ближайшее время</p>
-        <a href="https://xn--e1afec2al.xn--p1ai/bankrotam" ><button class="mt-3 btn btn-success">Вернуться на главную</button></a>
+        <a href="https://xn--h1apee0d.xn--3-jtbmc.xn--p1ai/" ><button class="mt-3 btn btn-success">Вернуться на главную</button></a>
     </div>
 </div>
 </body>
