@@ -43,7 +43,7 @@ if ($result === FALSE) { /* Handle error */ }
     <div class="col-12 align-items-center">
         <h1>Заявка отправленна</h1>
         <p>Наш юрист свяжется с вами в ближайшее время</p>
-        <a href="https://xn--e1afec2al.xn--p1ai/bankrotam" ><button class="mt-3 btn btn-success">Вернуться на главную</button></a>
+        <a href="https://xn--80abi0ahidfrv.xn--p1acf/" ><button class="mt-3 btn btn-success">Вернуться на главную</button></a>
     </div>
 </div>
 </body>
